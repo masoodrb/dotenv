@@ -3,4 +3,5 @@
  (category utils)
  (license "MIT")
  (dependencies readline)
+ (test-dependencies test)
  (components (extension dotenv)))

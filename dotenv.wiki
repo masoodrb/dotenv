@@ -1,0 +1,60 @@
+== dotenv
+
+[[toc:]]
+
+=== Description
+
+A lightweight utility for CHICKEN Scheme that loads environment variables from 
+a {{.env}} file into the current process's environment. It supports comments, 
+trims whitespace, and handles values containing equal signs.
+
+=== API
+
+==== [procedure] (load-dotenv [filepath])
+
+Reads the file specified by {{filepath}} (which defaults to {{".env"}}) and 
+sets environment variables using the standard {{setenv}} procedure.
+
+* Valid lines are formatted as {{KEY=VALUE}}.
+* Lines starting with {{#}} are ignored as comments.
+* Empty lines are ignored.
+* Leading and trailing whitespace is automatically trimmed from both keys and values.
+
+=== Examples
+
+Assuming you have a file named {{.env}}:
+<enscript highlight="text">
+DB_PORT=5432
+API_KEY=secret_key_123
+# This is a comment
+</enscript>
+
+You can load it in your Scheme code like this:
+
+<enscript highlight="scheme">
+(import dotenv)
+
+;; Load the default .env file
+(load-dotenv)
+
+;; Access the variables
+(print (get-environment-variable "DB_PORT")) ; => "5432"
+</enscript>
+
+=== Requirements
+
+* [[readline]]
+
+=== About this egg
+
+==== Author
+
+[[/users/masoodrb|Masood Ahmed]]
+
+==== Repository
+
+[[https://github.com/masoodrb/dotenv]]
+
+==== License
+
+MIT

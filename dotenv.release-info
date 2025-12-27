@@ -1,0 +1,3 @@
+((repo git "https://github.com/masoodrb/dotenv.git")
+ (uri ark "https://github.com/masoodrb/dotenv/archive/{tag}.tar.gz")
+ (releases ("1.0.0" "v1.0.0")))
