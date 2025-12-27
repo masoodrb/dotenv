@@ -43,7 +43,7 @@ You can load it in your Scheme code like this:
 
 === Requirements
 
-* [[readline]]
+* [[srfi-13]]
 
 === About this egg
 

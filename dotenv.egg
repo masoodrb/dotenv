@@ -2,6 +2,6 @@
  (author "Masood Ahmed")
  (category utils)
  (license "MIT")
- (dependencies readline)
+ (dependencies srfi-13)
  (test-dependencies test)
  (components (extension dotenv)))

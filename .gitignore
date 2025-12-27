@@ -1,0 +1,18 @@
+# CHICKEN Scheme build artifacts
+*.install.sh
+*.link
+*.static.o
+*.import.scm
+*.import.so
+*.so
+*.build.sh
+
+# Executables/Binary output
+*.exe
+dotenv
+
+# Temporary test files
+.env.test
+
+# Mac/Linux system files
+.DS_Store
