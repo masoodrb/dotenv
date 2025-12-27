@@ -1,0 +1,6 @@
+((synopsis "A simple .env file loader")
+ (author "Masood Ahmed")
+ (category utils)
+ (license "MIT")
+ (dependencies readline)
+ (components (extension dotenv)))
