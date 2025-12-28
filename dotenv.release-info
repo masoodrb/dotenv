@@ -1,3 +1,4 @@
 (repo git "https://github.com/masoodrb/dotenv.git")
 (uri targz "https://github.com/masoodrb/dotenv/archive/{egg-release}.tar.gz")
 (release "v1.0.0")
+(release "v1.0.1")
