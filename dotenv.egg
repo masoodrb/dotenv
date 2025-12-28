@@ -1,6 +1,6 @@
 ((synopsis "A simple .env file loader")
  (author "Masood Ahmed")
- (category utils)
+ (category tools)
  (license "MIT")
  (dependencies srfi-13)
  (test-dependencies test)
